@@ -1,3 +1,5 @@
+import com.pluralsight.Employee;
+
 public class Main {
     public static void main(String[] args) {
         // ---- Test Room ----
@@ -7,7 +9,7 @@ public class Main {
         room1.checkOut();  // should set occupied = false, dirty = true
         room1.cleanRoom(); // should clean the room
 
-        // ---- Test Employee ----
+        // ---- Test com.pluralsight.Employee ----
         Employee emp1 = new Employee(101, "John Smith", "Housekeeping", 20.00, 0);
         emp1.punchIn(9.0);   // 9:00 am
         emp1.punchOut(17.5); // 5:30 pm
